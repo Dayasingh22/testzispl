@@ -21,7 +21,7 @@ const Footer = () => {
               Started!
             </h2>
             <div className="link-box">
-              <a className="theme-btn btn-style-two" href="about.html">
+              <a className="theme-btn btn-style-two" href="/contact">
                 <i className="btn-curve"></i>
                 <span className="btn-title">Contact with us</span>
               </a>
@@ -38,12 +38,18 @@ const Footer = () => {
                   <div className="widget-content">
                     <div className="logo">
                       <a href="index.html">
-                        <img id="fLogo" src="images/footer-logo.png" alt="" />
+                        <img
+                          id="fLogo"
+                          src="/images/logo.png"
+                          alt="logo"
+                          style={{ height: "54px" }}
+                        />
                       </a>
                     </div>
                     <div className="text">
-                      Welcome to our web design agency. Lorem ipsum simply free
-                      text dolor sited amet cons cing elit.
+                      We strive to excel and help unlock your potential. We
+                      innovate and have the competency, attitude and mindset to
+                      deliver.
                     </div>
                     <ul className="social-links clearfix">
                       <li>
@@ -132,8 +138,8 @@ const Footer = () => {
                       </li>
                       <li>
                         <span className="icon flaticon-email-2"></span>
-                        <a href="mailto:needhelp@linoor.com">
-                          needhelp@linoor.com
+                        <a href="mailto:contact-us@zispl.com">
+                          contact-us@zispl.com
                         </a>
                       </li>
                     </ul>

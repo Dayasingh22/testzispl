@@ -21,7 +21,7 @@ html {
 :root {
   --thm-font: "Teko", sans-serif;
   --thm-b-font: "Rubik", sans-serif;
-  --thm-base: #ffaa17;
+  --thm-base: #6fdf92;
   --thm-base-rgb: 255, 170, 23;
   --thm-black: #222429;
   --thm-text: #686a6f;
@@ -487,6 +487,7 @@ img {
 /*=== Header Main Box ===*/
 
 .main-header .header-upper {
+  height: 110px;
   position: fixed;
   display: block;
   left: 0;
@@ -527,7 +528,7 @@ img {
 .main-header .header-upper .logo-box {
   position: relative;
   float: left;
-  padding: 40px 0px;
+  padding: 33px 0px;
   margin-right: 50px;
   z-index: 7;
 }
@@ -541,7 +542,7 @@ img {
   position: relative;
   display: inline-block;
   max-width: 100%;
-  max-height: 34px;
+  max-height: 54px;
   z-index: 1;
 }
 
@@ -11237,7 +11238,7 @@ img.lazy-image.loaded {
 }
 
 .side-menu__social a:hover {
-  background-color: #ffaa16;
+  background-color: #529b69;
   color: var(--thm-black);
 }
 
@@ -11261,7 +11262,7 @@ img.lazy-image.loaded {
 }
 
 .side-menu__content p a:hover {
-  color: #ffaa16;
+  color: #529b69;
   text-decoration: underline;
 }
 

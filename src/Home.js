@@ -6,6 +6,7 @@ import Preloader from "./components/Preloader";
 import Showcase2 from "./components/Showcase/showcase2";
 import Footer from "./components/Footer";
 import useScript from "./useScript";
+import AnimatedLearning from "./components/AnimatedLearning";
 
 const Home = () => {
   // const addScript = (url) => {
@@ -45,10 +46,10 @@ const Home = () => {
 
   return (
     <>
-      <Preloader />
       <Header />
       <Showcase />
       <Showcase2 />
+      <AnimatedLearning />
       <Footer />
       <a href="#" data-target="html" className="scroll-to-target scroll-to-top">
         <i className="fa fa-angle-up"></i>

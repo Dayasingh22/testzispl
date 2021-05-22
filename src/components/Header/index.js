@@ -30,10 +30,33 @@ const Header = () => {
                 >
                   <ul className="navigation clearfix">
                     <li>
-                      <a href="contact.html">Home</a>
+                      <a href="/">Home</a>
+                    </li>
+                    <li class="dropdown">
+                      <a>Learning Solutions</a>
+                      <ul>
+                        <li>
+                          <a href="/">Content Development</a>
+                        </li>
+                        <li>
+                          <a href="/">Localization</a>
+                        </li>
+                        <li>
+                          <a href="/">E-learning</a>
+                        </li>
+                        <li>
+                          <a href="/">Engagement Model</a>
+                        </li>
+                      </ul>
                     </li>
                     <li>
-                      <a href="contact.html">Contact</a>
+                      <a href="/worksamples">Work Samples</a>
+                    </li>
+                    <li>
+                      <a href="/blog">Blog</a>
+                    </li>
+                    <li>
+                      <a href="/contact">Contact</a>
                     </li>
                   </ul>
                 </div>
@@ -75,11 +98,12 @@ const Header = () => {
           <div className="side-menu__sep"></div>
           <div className="side-menu__content">
             <p>
-              Linoor is a premium Template for Digital Agencies, Start Ups,
-              Small Business and a wide range of other agencies.
+              WELCOME TO ZISPL <br /> We strive to excel and help unlock your
+              potential. We innovate and have the competency, attitude and
+              mindset to deliver
             </p>
             <p>
-              <a href="mailto:needhelp@linoor.com">needhelp@linoor.com</a>{" "}
+              <a href="mailto:contact-us@zispl.com">contact-us@zispl.com</a>{" "}
               <br /> <a href="tel:888-999-0000">888 999 0000</a>
             </p>
             <div className="side-menu__social">
