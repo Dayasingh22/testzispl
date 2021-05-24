@@ -6,12 +6,6 @@ import SubsequentShowcase from "../components/Showcase/SubsequentShowcase";
 import useScript from "../useScript";
 
 const Contact = () => {
-  useScript("/js/popper.min.js");
-  useScript("/js/bootstrap.min.js");
-  useScript("/js/jquery-ui.js");
-  useScript("/js/jquery.fancybox.js");
-  useScript("/js/owl.js");
-  useScript("/js/mixitup.js");
   useScript("/js/appear.js");
   useScript("/js/wow.js");
   useScript("/js/jarallax.min.js");
