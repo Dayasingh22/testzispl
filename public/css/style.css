@@ -769,7 +769,7 @@ img {
 .main-menu .navigation > li > ul {
   position: absolute;
   left: 0px;
-  top: 100%;
+  top: 97%;
   width: 220px;
   z-index: 100;
   display: none;
