@@ -52,56 +52,56 @@
   //   });
   // }
 
-  if ($(".range-slider-price").length) {
-    var priceRange = document.getElementById("range-slider-price");
-    var priceRangeMin = $(".range-slider-price").data("range-min");
-    var priceRangeMax = $(".range-slider-price").data("range-max");
-    var priceRangeStartMin = $(".range-slider-price").data("start-min");
-    var priceRangeStartMax = $(".range-slider-price").data("start-max");
-    var priceRangeLimit = $(".range-slider-price").data("limit");
+  // if ($(".range-slider-price").length) {
+  //   var priceRange = document.getElementById("range-slider-price");
+  //   var priceRangeMin = $(".range-slider-price").data("range-min");
+  //   var priceRangeMax = $(".range-slider-price").data("range-max");
+  //   var priceRangeStartMin = $(".range-slider-price").data("start-min");
+  //   var priceRangeStartMax = $(".range-slider-price").data("start-max");
+  //   var priceRangeLimit = $(".range-slider-price").data("limit");
 
-    window.noUiSlider.create(priceRange, {
-      start: [priceRangeStartMin, priceRangeStartMax],
-      limit: priceRangeLimit,
-      behaviour: "drag",
-      connect: true,
-      format: window.wNumb({
-        decimals: 0,
-      }),
-      range: {
-        min: priceRangeMin,
-        max: priceRangeMax,
-      },
-    });
+  //   window.noUiSlider.create(priceRange, {
+  //     start: [priceRangeStartMin, priceRangeStartMax],
+  //     limit: priceRangeLimit,
+  //     behaviour: "drag",
+  //     connect: true,
+  //     format: window.wNumb({
+  //       decimals: 0,
+  //     }),
+  //     range: {
+  //       min: priceRangeMin,
+  //       max: priceRangeMax,
+  //     },
+  //   });
 
-    var limitFieldMin = document.getElementById("min-value-rangeslider");
-    var limitFieldMax = document.getElementById("max-value-rangeslider");
+  //   var limitFieldMin = document.getElementById("min-value-rangeslider");
+  //   var limitFieldMax = document.getElementById("max-value-rangeslider");
 
-    priceRange.noUiSlider.on("update", function (values, handle) {
-      (handle ? $(limitFieldMax) : $(limitFieldMin)).text(values[handle]);
-    });
-  }
+  //   priceRange.noUiSlider.on("update", function (values, handle) {
+  //     (handle ? $(limitFieldMax) : $(limitFieldMin)).text(values[handle]);
+  //   });
+  // }
 
-  if ($(".add").length) {
-    $(".add").on("click", function () {
-      if ($(this).prev().val() < 999) {
-        $(this)
-          .prev()
-          .val(+$(this).prev().val() + 1);
-      }
-    });
-  }
+  // if ($(".add").length) {
+  //   $(".add").on("click", function () {
+  //     if ($(this).prev().val() < 999) {
+  //       $(this)
+  //         .prev()
+  //         .val(+$(this).prev().val() + 1);
+  //     }
+  //   });
+  // }
 
-  if ($(".sub").length) {
-    $(".sub").on("click", function () {
-      if ($(this).next().val() > 1) {
-        if ($(this).next().val() > 1)
-          $(this)
-            .next()
-            .val(+$(this).next().val() - 1);
-      }
-    });
-  }
+  // if ($(".sub").length) {
+  //   $(".sub").on("click", function () {
+  //     if ($(this).next().val() > 1) {
+  //       if ($(this).next().val() > 1)
+  //         $(this)
+  //           .next()
+  //           .val(+$(this).next().val() - 1);
+  //     }
+  //   });
+  // }
 
   // if ($(".countdown-one__list").length) {
   //   let mainDate = $(".countdown-one__list").data("deadline-date");
@@ -180,8 +180,6 @@
     }
   }
 
-  headerStyle();
-
   //Submenu Dropdown Toggle
   if ($(".main-header li.dropdown ul").length) {
     $(".main-header .navigation li.dropdown > a").append(
@@ -217,81 +215,81 @@
     );
   }
 
-  //Search Popup
-  if ($(".search-popup").length) {
-    //Show Popup
-    $(".search-toggler").on("click", function () {
-      $(".search-popup").addClass("active");
-    });
-    //Hide Popup
-    $(".search-popup__overlay").on("click", function (e) {
-      $(".search-popup").removeClass("active");
-      e.preventDefault();
-    });
-    //Hide Popup
-    $(document).keydown(function (e) {
-      if (e.keyCode === 27) {
-        $(".search-popup").addClass("active");
-      }
-    });
-  }
+  // //Search Popup
+  // if ($(".search-popup").length) {
+  //   //Show Popup
+  //   $(".search-toggler").on("click", function () {
+  //     $(".search-popup").addClass("active");
+  //   });
+  //   //Hide Popup
+  //   $(".search-popup__overlay").on("click", function (e) {
+  //     $(".search-popup").removeClass("active");
+  //     e.preventDefault();
+  //   });
+  //   //Hide Popup
+  //   $(document).keydown(function (e) {
+  //     if (e.keyCode === 27) {
+  //       $(".search-popup").addClass("active");
+  //     }
+  //   });
+  // }
 
   //Custom Cursor
-  if ($(".custom-cursor__overlay").length) {
-    // / cursor /
-    var cursor = $(".custom-cursor__overlay .cursor"),
-      follower = $(".custom-cursor__overlay .cursor-follower");
+  // if ($(".custom-cursor__overlay").length) {
+  //   // / cursor /
+  //   var cursor = $(".custom-cursor__overlay .cursor"),
+  //     follower = $(".custom-cursor__overlay .cursor-follower");
 
-    var posX = 0,
-      posY = 0;
+  //   var posX = 0,
+  //     posY = 0;
 
-    var mouseX = 0,
-      mouseY = 0;
+  //   var mouseX = 0,
+  //     mouseY = 0;
 
-    window.TweenMax.to({}, 0.016, {
-      repeat: -1,
-      onRepeat: function () {
-        posX += (mouseX - posX) / 9;
-        posY += (mouseY - posY) / 9;
+  //   window.TweenMax.to({}, 0.016, {
+  //     repeat: -1,
+  //     onRepeat: function () {
+  //       posX += (mouseX - posX) / 9;
+  //       posY += (mouseY - posY) / 9;
 
-        window.TweenMax.set(follower, {
-          css: {
-            left: posX - 22,
-            top: posY - 22,
-          },
-        });
+  //       window.TweenMax.set(follower, {
+  //         css: {
+  //           left: posX - 22,
+  //           top: posY - 22,
+  //         },
+  //       });
 
-        window.TweenMax.set(cursor, {
-          css: {
-            left: mouseX,
-            top: mouseY,
-          },
-        });
-      },
-    });
+  //       window.TweenMax.set(cursor, {
+  //         css: {
+  //           left: mouseX,
+  //           top: mouseY,
+  //         },
+  //       });
+  //     },
+  //   });
 
-    $(document).on("mousemove", function (e) {
-      var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      mouseX = e.pageX;
-      mouseY = e.pageY - scrollTop;
-    });
-    $("button, a").on("mouseenter", function () {
-      cursor.addClass("active");
-      follower.addClass("active");
-    });
-    $("button, a").on("mouseleave", function () {
-      cursor.removeClass("active");
-      follower.removeClass("active");
-    });
-    $(".custom-cursor__overlay").on("mouseenter", function () {
-      cursor.addClass("close-cursor");
-      follower.addClass("close-cursor");
-    });
-    $(".custom-cursor__overlay").on("mouseleave", function () {
-      cursor.removeClass("close-cursor");
-      follower.removeClass("close-cursor");
-    });
-  }
+  //   $(document).on("mousemove", function (e) {
+  //     var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  //     mouseX = e.pageX;
+  //     mouseY = e.pageY - scrollTop;
+  //   });
+  //   $("button, a").on("mouseenter", function () {
+  //     cursor.addClass("active");
+  //     follower.addClass("active");
+  //   });
+  //   $("button, a").on("mouseleave", function () {
+  //     cursor.removeClass("active");
+  //     follower.removeClass("active");
+  //   });
+  //   $(".custom-cursor__overlay").on("mouseenter", function () {
+  //     cursor.addClass("close-cursor");
+  //     follower.addClass("close-cursor");
+  //   });
+  //   $(".custom-cursor__overlay").on("mouseleave", function () {
+  //     cursor.removeClass("close-cursor");
+  //     follower.removeClass("close-cursor");
+  //   });
+  // }
 
   //Main Slider / Banner Carousel
   if ($(".banner-carousel").length) {
@@ -966,6 +964,7 @@
     // });
 
     handlePreloader();
+    headerStyle();
 
     if ($(".masonary-layout").length) {
       $(".masonary-layout").isotope({
