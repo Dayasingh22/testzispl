@@ -9,7 +9,6 @@ const Library = () => {
       <ScriptTag type="text/javascript" src="/js/jquery.fancybox.js" />
       <ScriptTag type="text/javascript" src="/js/popper.min.js" />
       <ScriptTag type="text/javascript" src="/js/bootstrap.min.js" />
-      <ScriptTag type="text/javascript" src="/js/TweenMax.js" />
       <ScriptTag type="text/javascript" src="/js/owl.js" />
       <ScriptTag type="text/javascript" src="/js/mixitup.js" />
       <ScriptTag type="text/javascript" src="/js/appear.js" />

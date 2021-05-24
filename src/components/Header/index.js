@@ -32,7 +32,7 @@ const Header = () => {
                     <li>
                       <a href="/">Home</a>
                     </li>
-                    <li class="dropdown">
+                    <li className="dropdown">
                       <a>Learning Solutions</a>
                       <ul>
                         <li>
@@ -64,11 +64,6 @@ const Header = () => {
             </div>
 
             <div className="other-links clearfix">
-              <div className="search-btn">
-                <button type="button" className="theme-btn search-toggler">
-                  <span className="flaticon-loupe"></span>
-                </button>
-              </div>
               <div className="link-box">
                 <div className="call-us">
                   <a className="link" href="tel:6668880000">
@@ -121,24 +116,6 @@ const Header = () => {
               </a>
             </div>
           </div>
-        </div>
-      </div>
-      <div className="search-popup">
-        <div className="search-popup__overlay custom-cursor__overlay">
-          <div className="cursor"></div>
-          <div className="cursor-follower"></div>
-        </div>
-        <div className="search-popup__inner">
-          <form action="#" className="search-popup__form">
-            <input
-              type="text"
-              name="search"
-              placeholder="Type here to Search...."
-            />
-            <button type="submit">
-              <i className="fa fa-search"></i>
-            </button>
-          </form>
         </div>
       </div>
     </>
