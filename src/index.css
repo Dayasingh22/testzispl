@@ -556,10 +556,10 @@ tbody tr:nth-child(even) {
   }
 } */
 .st0 {
-  fill: #22b8d1;
+  fill: #4eb870;
 }
 .st1 {
-  fill: #e4f5fa;
+  fill: #bef1dc;
 }
 .st2 {
   fill: #ffffff;
@@ -582,7 +582,7 @@ tbody tr:nth-child(even) {
   position: relative;
 }
 .background-wrap.cloud-blue {
-  background-color: #ffaa17;
+  background-color: #6fdf92;
 }
 .background-wrap.white {
   background-color: #fff;

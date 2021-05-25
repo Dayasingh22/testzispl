@@ -6,7 +6,9 @@ import Showcase2 from "../components/Showcase/showcase2";
 import Footer from "../components/Footer";
 import useScript from "../useScript";
 import AnimatedLearning from "../components/AnimatedLearning";
-import WorkSamples from "../components/WorkSamples";
+import Stats from "../components/Stats";
+import Client from "../components/Client";
+import Blog from "../components/Blog";
 
 const Home = () => {
   useScript("/js/appear.js");
@@ -20,8 +22,10 @@ const Home = () => {
       <Header />
       <Showcase />
       <Showcase2 />
-      <AnimatedLearning />
-      <WorkSamples />
+      {/* <AnimatedLearning />
+      <Stats />
+      <Client />
+      <Blog /> */}
       <Footer />
       <a href="#" data-target="html" className="scroll-to-target scroll-to-top">
         <i className="fa fa-angle-up"></i>

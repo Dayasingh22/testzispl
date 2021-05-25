@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -56,7 +57,7 @@ const Header = () => {
                       <a href="/blog">Blog</a>
                     </li>
                     <li>
-                      <a href="/contact">Contact</a>
+                      <Link to="/">Contact</Link>
                     </li>
                   </ul>
                 </div>
@@ -112,7 +113,7 @@ const Header = () => {
                 <i className="fab fa-instagram"></i>
               </a>
               <a href="#">
-                <i className="fab fa-pinterest-p"></i>
+                <i className="fab fa-linkedin"></i>
               </a>
             </div>
           </div>

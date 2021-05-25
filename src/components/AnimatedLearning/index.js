@@ -3,6 +3,11 @@ import React from "react";
 const AnimatedLearning = () => {
   return (
     <>
+      <div className="sec-title centered mt-5">
+        <h2>
+          We re-inventing learning<span className="dot">.</span>
+        </h2>
+      </div>
       <div className="q-labels">
         <div className="q-labels__list">
           <div className="q-labels__item red">

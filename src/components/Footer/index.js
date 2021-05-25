@@ -69,7 +69,7 @@ const Footer = () => {
                       </li>
                       <li>
                         <a href="#">
-                          <span className="fab fa-pinterest-p"></span>
+                          <span className="fab fa-linkedin"></span>
                         </a>
                       </li>
                     </ul>
@@ -80,7 +80,7 @@ const Footer = () => {
               <div className="column col-xl-3 col-lg-6 col-md-6 col-sm-12">
                 <div className="footer-widget links-widget">
                   <div className="widget-content">
-                    <h6>Explore</h6>
+                    <h6>Learning Solutions</h6>
                     <div className="row clearfix">
                       <div className="col-md-6 col-sm-12">
                         <ul>
@@ -128,9 +128,8 @@ const Footer = () => {
                     <h6>Contact</h6>
                     <ul className="contact-info">
                       <li className="address">
-                        <span className="icon flaticon-pin-1"></span> 66 Broklyn
-                        Street, New York <br />
-                        United States of America
+                        <span className="icon flaticon-pin-1"></span> Nicolaas
+                        Anslijnstraat 142, 1068 WX, Amsterdam Netherlands.
                       </li>
                       <li>
                         <span className="icon flaticon-call"></span>
