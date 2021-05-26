@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import SubsequentShowcase from "../components/Showcase/SubsequentShowcase";
 import useScript from "../useScript";
+import ScrollToTop from "../components/ScrollToTop";
 
 const Contact = () => {
   useScript("/js/appear.js");
@@ -134,11 +135,7 @@ const Contact = () => {
               </h2>
             </div>
             <div className="default-form">
-              <form
-                method="post"
-                action="http://layerdrops.com/linoorhtml/sendemail.php"
-                id="contact-form"
-              >
+              <form method="post" id="contact-form">
                 <div className="row clearfix">
                   <div className="form-group col-lg-6 col-md-6 col-sm-12">
                     <div className="field-inner">
@@ -202,9 +199,7 @@ const Contact = () => {
         </div>
       </section>
       <Footer />
-      <a href="#" data-target="html" className="scroll-to-target scroll-to-top">
-        <i className="fa fa-angle-up"></i>
-      </a>
+      <ScrollToTop />
     </>
   );
 };

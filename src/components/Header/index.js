@@ -51,14 +51,23 @@ const Header = () => {
                       </ul>
                     </li>
                     <li>
-                      <a href="/worksamples">Work Samples</a>
+                      <a href="/">Work Samples</a>
                     </li>
                     <li>
-                      <a href="/blog">Blog</a>
+                      <Link to="/">Blog</Link>
                     </li>
                     <li>
                       <Link to="/">Contact</Link>
                     </li>
+                    {/* <li>
+                      <a href="/worksamples">Work Samples</a>
+                    </li>
+                    <li>
+                      <Link to="/blog">Blog</Link>
+                    </li>
+                    <li>
+                      <Link to="/contact">Contact</Link>
+                    </li> */}
                   </ul>
                 </div>
               </nav>

@@ -22,7 +22,7 @@ html {
   --thm-font: "Teko", sans-serif;
   --thm-b-font: "Rubik", sans-serif;
   --thm-base: #6fdf92;
-  --thm-base-rgb: 255, 170, 23;
+  --thm-base-rgb: 111, 223, 146;
   --thm-black: #222429;
   --thm-text: #686a6f;
 }
@@ -11449,7 +11449,7 @@ img.lazy-image.loaded {
 }
 
 #styleOptions li a.color-default {
-  background-color: #ffaa17;
+  background-color: #6fdf92;
 }
 
 #styleOptions li a.color-2 {

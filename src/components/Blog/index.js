@@ -1,6 +1,39 @@
 import React from "react";
 
 const Blog = () => {
+  const blogs = [
+    {
+      date: "20 Mar",
+      author: "Admin",
+      link: "#",
+      delay: "0ms",
+      image: "/images/resource/news-7.jpg",
+      title: "basic rules of running web agency business",
+      description: `Lorem ipsum is simply free text used by copytyping
+                    refreshing.`,
+    },
+    {
+      date: "25 Mar",
+      author: "Admin",
+      link: "#",
+      delay: "300ms",
+      image: "/images/resource/news-8.jpg",
+      title: "Delivering the best digital marketing",
+      description: `Lorem ipsum is simply free text used by copytyping
+                    refreshing.`,
+    },
+    {
+      date: "28 Mar",
+      author: "Admin",
+      link: "#",
+      delay: "600ms",
+      image: "/images/resource/news-9.jpg",
+      title: "Introducing the latest learning features",
+      description: `Lorem ipsum is simply free text used by copytyping
+                    refreshing.`,
+    },
+  ];
+
   return (
     <>
       <section className="news-section">
@@ -12,132 +45,44 @@ const Blog = () => {
           </div>
 
           <div className="row clearfix">
-            <div
-              className="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp"
-              data-wow-delay="0ms"
-              data-wow-duration="1500ms"
-            >
-              <div className="inner-box">
-                <div className="image-box">
-                  <a href="blog-single.html">
-                    <img src="images/resource/news-1.jpg" alt="dd" />
-                  </a>
-                </div>
-                <div className="lower-box">
-                  <div className="post-meta">
-                    <ul className="clearfix">
-                      <li>
-                        <span className="far fa-clock"></span> 20 Mar
-                      </li>
-                      <li>
-                        <span className="far fa-user-circle"></span> Admin
-                      </li>
-                      <li>
-                        <span className="far fa-comments"></span> 2 Comments
-                      </li>
-                    </ul>
-                  </div>
-                  <h5>
-                    <a href="blog-single.html">
-                      basic rules of running web agency business
+            {blogs.map((blog) => (
+              <div
+                className="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp"
+                data-wow-delay={blog.delay}
+                data-wow-duration="1500ms"
+                key={blog.title}
+              >
+                <div className="inner-box">
+                  <div className="image-box">
+                    <a href={blog.link}>
+                      <img src={blog.image} alt="dd" />
                     </a>
-                  </h5>
-                  <div className="text">
-                    Lorem ipsum is simply free text used by copytyping
-                    refreshing.
                   </div>
-                  <div className="link-box">
-                    <a className="theme-btn" href="blog-single.html">
-                      <span className="flaticon-next-1"></span>
-                    </a>
+                  <div className="lower-box">
+                    <div className="post-meta">
+                      <ul className="clearfix">
+                        <li>
+                          <span className="far fa-clock"></span> {blog.date}
+                        </li>
+                        <li>
+                          <span className="far fa-user-circle"></span>{" "}
+                          {blog.author}
+                        </li>
+                      </ul>
+                    </div>
+                    <h5>
+                      <a href={blog.link}>{blog.title}</a>
+                    </h5>
+                    <div className="text">{blog.description}</div>
+                    <div className="link-box">
+                      <a className="theme-btn" href={blog.link}>
+                        <span className="flaticon-next-1"></span>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              className="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp"
-              data-wow-delay="300ms"
-              data-wow-duration="1500ms"
-            >
-              <div className="inner-box">
-                <div className="image-box">
-                  <a href="blog-single.html">
-                    <img src="/images/resource/news-2.jpg" alt="kk" />
-                  </a>
-                </div>
-                <div className="lower-box">
-                  <div className="post-meta">
-                    <ul className="clearfix">
-                      <li>
-                        <span className="far fa-clock"></span> 20 Mar
-                      </li>
-                      <li>
-                        <span className="far fa-user-circle"></span> Admin
-                      </li>
-                      <li>
-                        <span className="far fa-comments"></span> 2 Comments
-                      </li>
-                    </ul>
-                  </div>
-                  <h5>
-                    <a href="blog-single.html">
-                      Delivering the best digital marketing
-                    </a>
-                  </h5>
-                  <div className="text">
-                    Lorem ipsum is simply free text used by copytyping
-                    refreshing.
-                  </div>
-                  <div className="link-box">
-                    <a className="theme-btn" href="blog-single.html">
-                      <span className="flaticon-next-1"></span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp"
-              data-wow-delay="600ms"
-              data-wow-duration="1500ms"
-            >
-              <div className="inner-box">
-                <div className="image-box">
-                  <a href="blog-single.html">
-                    <img src="/images/resource/news-3.jpg" alt="kk" />
-                  </a>
-                </div>
-                <div className="lower-box">
-                  <div className="post-meta">
-                    <ul className="clearfix">
-                      <li>
-                        <span className="far fa-clock"></span> 20 Mar
-                      </li>
-                      <li>
-                        <span className="far fa-user-circle"></span> Admin
-                      </li>
-                      <li>
-                        <span className="far fa-comments"></span> 2 Comments
-                      </li>
-                    </ul>
-                  </div>
-                  <h5>
-                    <a href="blog-single.html">
-                      Introducing the latest linoor features
-                    </a>
-                  </h5>
-                  <div className="text">
-                    Lorem ipsum is simply free text used by copytyping
-                    refreshing.
-                  </div>
-                  <div className="link-box">
-                    <a className="theme-btn" href="blog-single.html">
-                      <span className="flaticon-next-1"></span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>

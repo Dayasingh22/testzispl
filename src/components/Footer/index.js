@@ -151,10 +151,7 @@ const Footer = () => {
                   <div className="widget-content">
                     <h6>Newsletter</h6>
                     <div className="newsletter-form">
-                      <form
-                        method="post"
-                        action="http://layerdrops.com/linoorhtml/contact.html"
-                      >
+                      <form method="post">
                         <div className="form-group clearfix">
                           <input
                             type="email"
@@ -182,7 +179,9 @@ const Footer = () => {
         <div className="footer-bottom">
           <div className="auto-container">
             <div className="inner clearfix">
-              <div className="copyright">&copy; copyright 2021 ZISBV</div>
+              <div className="copyright">
+                &copy; copyright {new Date().getFullYear()} ZISBV
+              </div>
             </div>
           </div>
         </div>

@@ -9,6 +9,7 @@ import AnimatedLearning from "../components/AnimatedLearning";
 import Stats from "../components/Stats";
 import Client from "../components/Client";
 import Blog from "../components/Blog";
+import ScrollToTop from "../components/ScrollToTop";
 
 const Home = () => {
   useScript("/js/appear.js");
@@ -22,14 +23,12 @@ const Home = () => {
       <Header />
       <Showcase />
       <Showcase2 />
-      {/* <AnimatedLearning />
+      {/* <AnimatedLearning /> */}
       <Stats />
       <Client />
-      <Blog /> */}
+      <Blog />
       <Footer />
-      <a href="#" data-target="html" className="scroll-to-target scroll-to-top">
-        <i className="fa fa-angle-up"></i>
-      </a>
+      <ScrollToTop />
     </>
   );
 };

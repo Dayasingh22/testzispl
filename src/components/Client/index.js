@@ -1,6 +1,19 @@
 import React from "react";
 
 const Client = () => {
+  const clients = [
+    { image: "/images/clients/1.png", id: "1" },
+    { image: "/images/clients/2.png", id: "2" },
+    { image: "/images/clients/3.png", id: "3" },
+    { image: "/images/clients/4.png", id: "4" },
+    { image: "/images/clients/5.png", id: "5" },
+    { image: "/images/clients/1.png", id: "6" },
+    { image: "/images/clients/2.png", id: "7" },
+    { image: "/images/clients/3.png", id: "8" },
+    { image: "/images/clients/4.png", id: "9" },
+    { image: "/images/clients/5.png", id: "10" },
+  ];
+
   return (
     <>
       <section
@@ -31,76 +44,15 @@ const Client = () => {
         <div className="sponsors-outer">
           <div className="auto-container">
             <div className="sponsors-carousel owl-theme owl-carousel">
-              <div className="slide-item">
-                <figure className="image-box">
-                  <a>
-                    <img src="/images/clients/1.png" alt="hh" />
-                  </a>
-                </figure>
-              </div>
-              <div className="slide-item">
-                <figure className="image-box">
-                  <a>
-                    <img src="/images/clients/2.png" alt="hh" />
-                  </a>
-                </figure>
-              </div>
-              <div className="slide-item">
-                <figure className="image-box">
-                  <a>
-                    <img src="/images/clients/3.png" alt="hh" />
-                  </a>
-                </figure>
-              </div>
-              <div className="slide-item">
-                <figure className="image-box">
-                  <a>
-                    <img src="/images/clients/4.png" alt="hh" />
-                  </a>
-                </figure>
-              </div>
-              <div className="slide-item">
-                <figure className="image-box">
-                  <a>
-                    <img src="/images/clients/5.png" alt="hh" />
-                  </a>
-                </figure>
-              </div>
-              <div className="slide-item">
-                <figure className="image-box">
-                  <a>
-                    <img src="/images/clients/1.png" alt="hh" />
-                  </a>
-                </figure>
-              </div>
-              <div className="slide-item">
-                <figure className="image-box">
-                  <a>
-                    <img src="/images/clients/2.png" alt="hh" />
-                  </a>
-                </figure>
-              </div>
-              <div className="slide-item">
-                <figure className="image-box">
-                  <a>
-                    <img src="/images/clients/3.png" alt="hh" />
-                  </a>
-                </figure>
-              </div>
-              <div className="slide-item">
-                <figure className="image-box">
-                  <a>
-                    <img src="/images/clients/4.png" alt="hh" />
-                  </a>
-                </figure>
-              </div>
-              <div className="slide-item">
-                <figure className="image-box">
-                  <a>
-                    <img src="/images/clients/5.png" alt="hh" />
-                  </a>
-                </figure>
-              </div>
+              {clients.map((client) => (
+                <div className="slide-item" key={client.id}>
+                  <figure className="image-box">
+                    <a>
+                      <img src={client.image} alt="hh" />
+                    </a>
+                  </figure>
+                </div>
+              ))}
             </div>
           </div>
         </div>
