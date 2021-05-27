@@ -23,7 +23,7 @@ const Home = () => {
       <Header />
       <Showcase />
       <Showcase2 />
-      {/* <AnimatedLearning /> */}
+      <AnimatedLearning />
       <Stats />
       <Client />
       <Blog />
