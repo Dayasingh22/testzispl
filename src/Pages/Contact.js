@@ -15,7 +15,7 @@ const Contact = () => {
     <>
       <Header />
       <SubsequentShowcase page="Contact" />
-      {/* <section className="contact-section">
+      <section className="contact-section">
         <div className="auto-container">
           <div className="sec-title centered">
             <h2>
@@ -197,7 +197,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
       <Footer />
       <ScrollToTop />
     </>
