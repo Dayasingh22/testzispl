@@ -51,15 +51,6 @@ const Header = () => {
                       </ul>
                     </li>
                     <li>
-                      <a href="/">Work Samples</a>
-                    </li>
-                    <li>
-                      <Link to="/">Blog</Link>
-                    </li>
-                    <li>
-                      <Link to="/contact">Contact</Link>
-                    </li>
-                    {/* <li>
                       <a href="/worksamples">Work Samples</a>
                     </li>
                     <li>
@@ -67,7 +58,7 @@ const Header = () => {
                     </li>
                     <li>
                       <Link to="/contact">Contact</Link>
-                    </li> */}
+                    </li>
                   </ul>
                 </div>
               </nav>
